@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Admission</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <link rel="stylesheet" href="form.css">
+    </head>
+    <body class="addmission-form">
+        
+        <h1>Admission Form</h1>
+        <form action="admission.jsp" enctype="multipart/form-data" method="post">
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="Enter your First Name">
+            <label>Last Name</label>
+            <input type="text" name="firstname" placeholder="Enter your Last Name">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Eg: Example@gmail.com">
+            <label>ID/Passport</label>
+            <input type="text" name="id" placeholder="Enter your ID/Passport Number">
+            <label>Date Of Birth</label>
+            <input type="date" name="dob">
+            <label>Diploma</label>
+            <input class="input-file" type="file" name="diploma">
+            <label>Photo</label>
+            <input type="file" name="photo">
+            
+            <label>Faculty:</label>
+            <select name="faculty" >
+                <option value="" >Choose your Faculty</option>
+                <option value="informationTech">Information Technology</option>
+                <option value="businessAdmin">Business Administration</option>
+                <option value="education">Education</option>
+            </select>
+            <label>Department:</label>
+            <select name="department">
+                <option value="" >Choose your Department</option>
+                <option value="informationMgt">Information Management</option>
+                <option value="networkcom">Network & Communication</option>
+                <option value="softwareEng">Software Engineering</option>
+                <option value="accounting">Accounting</option>
+                <option value="finance">Finance</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+                <option value="biology">Biology</option>
+                <option value="literature">Literature</option>
+            </select><br>
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>
